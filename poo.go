@@ -27,7 +27,7 @@ func poop(w http.ResponseWriter, r *http.Request) {
 	defer t.Stop()
 	f, ok := w.(http.Flusher)
 	if !ok {
-		http.Error(w, "no poop for you", http.StatusInternalServerError)
+		http.Error(w, "💩", http.StatusInternalServerError)
 		return
 	}
 	for {
